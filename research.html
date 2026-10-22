@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Research | Mun Lab</title>
+  <meta name="description" content="Research at Mun Lab: super-resolution, agricultural pest detection, visualization systems and machine learning with limited data.">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>(function(){var l;try{l=localStorage.getItem("lang")}catch(e){}if(!l)l=(navigator.language||"").slice(0,2)==="ja"?"ja":"en";document.documentElement.setAttribute("data-lang",l);document.documentElement.lang=l})()</script>
+</head>
+<body data-page="research"
+      data-title-en="Research | Mun Lab"
+      data-title-ja="研究 | ムン研究室">
+
+  <div id="site-header"></div>
+
+  <main>
+    <section class="page-hero">
+      <canvas class="net-canvas" aria-hidden="true"></canvas>
+      <div class="container">
+        <div class="eyebrow reveal">Research</div>
+        <h1 class="words" data-l="en">Our Research</h1>
+        <h1 class="words" data-l="ja">研究内容</h1>
+        <p class="reveal" style="--d:.3s" data-l="en">AI technologies centered on image processing, machine learning and computer vision, with applications in agriculture.</p>
+        <p class="reveal" style="--d:.3s" data-l="ja">画像処理・機械学習・コンピュータビジョンを中心としたAI技術と、その農業分野への応用に取り組んでいます。</p>
+      </div>
+    </section>
+
+    <!-- ===== Themes ===== -->
+    <section class="section" style="padding-top:40px">
+      <div class="container">
+
+        <article class="theme" id="sr">
+          <div class="theme-visual reveal">
+            <svg viewBox="0 0 200 150" aria-hidden="true">
+              <g fill="#1b7bc2">
+                <rect x="10" y="35" width="20" height="20" opacity=".25"/><rect x="30" y="35" width="20" height="20" opacity=".6"/><rect x="50" y="35" width="20" height="20" opacity=".35"/>
+                <rect x="10" y="55" width="20" height="20" opacity=".7"/><rect x="30" y="55" width="20" height="20" opacity=".95"/><rect x="50" y="55" width="20" height="20" opacity=".55"/>
+                <rect x="10" y="75" width="20" height="20" opacity=".3"/><rect x="30" y="75" width="20" height="20" opacity=".65"/><rect x="50" y="75" width="20" height="20" opacity=".3"/>
+                <rect x="10" y="95" width="20" height="20" opacity=".15"/><rect x="30" y="95" width="20" height="20" opacity=".3"/><rect x="50" y="95" width="20" height="20" opacity=".2"/>
+              </g>
+              <path d="M84 75h28M104 67l8 8-8 8" fill="none" stroke="#c8602a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              <defs><radialGradient id="g1"><stop offset="0" stop-color="#1b7bc2"/><stop offset=".6" stop-color="#5fb3ec"/><stop offset="1" stop-color="#c6e3f8" stop-opacity="0"/></radialGradient></defs>
+              <circle cx="156" cy="75" r="38" fill="url(#g1)"/>
+              <circle cx="156" cy="75" r="40" fill="none" stroke="#1b7bc2" stroke-width="1" stroke-dasharray="3 4" opacity=".5"/>
+            </svg>
+          </div>
+          <div>
+            <div class="theme-num reveal">01</div>
+            <h3 class="words" data-l="en">Super-Resolution for Low-Resolution Images</h3>
+            <h3 class="words" data-l="ja">低解像度画像の超解像技術</h3>
+            <p class="reveal" data-l="en">
+              Super-resolution reconstructs high-resolution detail from low-resolution images. We study reconstruction
+              approaches such as backprojection, dictionary learning and sparse representation, and apply
+              super-resolution to improve recognition of small objects in real-world images.
+            </p>
+            <p class="reveal" data-l="ja">
+              超解像は、低解像度の画像から高解像度の情報を復元する技術です。バックプロジェクションや辞書学習・スパース表現などの再構成手法を研究し、実環境の画像に写る小さな物体の認識精度向上に活用しています。
+            </p>
+          </div>
+        </article>
+
+        <article class="theme" id="pest">
+          <div class="theme-visual reveal">
+            <svg viewBox="0 0 200 150" aria-hidden="true">
+              <path d="M30 120C40 50 110 20 175 28c-8 62-58 105-145 92z" fill="#9dd0f3"/>
+              <path d="M30 120C70 90 120 60 175 28" fill="none" stroke="#5fb3ec" stroke-width="2"/>
+              <g fill="#0a1828"><ellipse cx="85" cy="80" rx="3" ry="6" transform="rotate(30 85 80)"/><ellipse cx="128" cy="55" rx="2.5" ry="5" transform="rotate(-20 128 55)"/><ellipse cx="112" cy="95" rx="2.5" ry="5"/></g>
+              <g fill="none" stroke="#c8602a" stroke-width="1.8"><rect x="74" y="68" width="22" height="24" rx="2"/><rect x="118" y="44" width="20" height="22" rx="2"/><rect x="102" y="84" width="20" height="22" rx="2"/></g>
+              <g font-family="Inter, sans-serif" font-size="7" font-weight="600" fill="#c8602a"><text x="74" y="65">0.94</text><text x="118" y="41">0.91</text></g>
+            </svg>
+          </div>
+          <div>
+            <div class="theme-num reveal">02</div>
+            <h3 class="words" data-l="en">Detection and Classification of Agricultural Pests</h3>
+            <h3 class="words" data-l="ja">画像処理・AIを用いた農業害虫の検出・分類</h3>
+            <p class="reveal" data-l="en">
+              Many agricultural pests, such as thrips, are tiny and hard to recognize in images. We develop methods
+              that combine image processing and AI, including super-resolution, to detect and classify these pests accurately.
+            </p>
+            <p class="reveal" data-l="ja">
+              アザミウマなどの農業害虫は非常に小さく、画像からの識別が困難です。超解像をはじめとする画像処理とAIを組み合わせ、害虫を高精度に検出・分類する手法を開発しています。
+            </p>
+          </div>
+        </article>
+
+        <article class="theme" id="vis">
+          <div class="theme-visual reveal">
+            <svg viewBox="0 0 200 150" aria-hidden="true">
+              <rect x="20" y="22" width="110" height="80" rx="6" fill="#fff" stroke="#5fb3ec" stroke-width="2"/>
+              <g fill="#9dd0f3"><rect x="34" y="70" width="12" height="20"/><rect x="52" y="56" width="12" height="34"/><rect x="70" y="62" width="12" height="28"/><rect x="88" y="44" width="12" height="46"/></g>
+              <path d="M34 52l20-10 18 6 28-14" fill="none" stroke="#1b7bc2" stroke-width="2" stroke-linecap="round"/>
+              <path d="M60 102l-6 18h42l-6-18" fill="#c6e3f8"/>
+              <rect x="138" y="42" width="44" height="80" rx="8" fill="#fff" stroke="#1b7bc2" stroke-width="2"/>
+              <circle cx="160" cy="70" r="13" fill="none" stroke="#9dd0f3" stroke-width="6"/>
+              <path d="M160 57a13 13 0 0 1 12 18" fill="none" stroke="#c8602a" stroke-width="6"/>
+              <g fill="#c6e3f8"><rect x="146" y="92" width="28" height="4" rx="2"/><rect x="146" y="100" width="20" height="4" rx="2"/></g>
+            </svg>
+          </div>
+          <div>
+            <div class="theme-num reveal">03</div>
+            <h3 class="words" data-l="en">Visualization Systems for Pest Monitoring</h3>
+            <h3 class="words" data-l="ja">農業害虫モニタリングのための可視化システム</h3>
+            <p class="reveal" data-l="en">
+              We build web and Android applications that visualize pest monitoring data, making AI results easy to
+              understand and use for people working in the field.
+            </p>
+            <p class="reveal" data-l="ja">
+              Web・Androidアプリを用いて害虫モニタリングのデータを可視化するシステムを構築しています。AIの解析結果を、現場の方々にとって分かりやすく使いやすい形で届けることを目指しています。
+            </p>
+          </div>
+        </article>
+
+        <article class="theme" id="limited">
+          <div class="theme-visual reveal">
+            <svg viewBox="0 0 200 150" aria-hidden="true">
+              <g fill="#1b7bc2"><circle cx="35" cy="50" r="5"/><circle cx="45" cy="95" r="5"/><circle cx="28" cy="75" r="5"/></g>
+              <g stroke="#5fb3ec" stroke-width="1.2" opacity=".8">
+                <path d="M35 50L95 40M35 50L95 75M28 75L95 40M28 75L95 75M28 75L95 110M45 95L95 75M45 95L95 110"/>
+                <path d="M95 40L150 58M95 40L150 92M95 75L150 58M95 75L150 92M95 110L150 58M95 110L150 92"/>
+              </g>
+              <g fill="#fff" stroke="#1b7bc2" stroke-width="2"><circle cx="95" cy="40" r="7"/><circle cx="95" cy="75" r="7"/><circle cx="95" cy="110" r="7"/></g>
+              <g fill="#5fb3ec"><circle cx="150" cy="58" r="8"/><circle cx="150" cy="92" r="8"/></g>
+              <path d="M178 66l3 7 7 3-7 3-3 7-3-7-7-3 7-3z" fill="#c8602a"/>
+            </svg>
+          </div>
+          <div>
+            <div class="theme-num reveal">04</div>
+            <h3 class="words" data-l="en">Machine Learning with Limited Data</h3>
+            <h3 class="words" data-l="ja">限られたデータでの機械学習手法</h3>
+            <p class="reveal" data-l="en">
+              Collecting large labelled datasets is often difficult in real applications such as agriculture.
+              We study machine learning methods that can learn effectively from a limited amount of data.
+            </p>
+            <p class="reveal" data-l="ja">
+              農業をはじめとする実応用の場面では、大量のラベル付きデータを集めることが難しい場合が多くあります。限られたデータからでも効果的に学習できる機械学習手法を研究しています。
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== Collaboration ===== -->
+    <section class="section tint">
+      <div class="container split">
+        <div>
+          <div class="eyebrow reveal">Collaboration</div>
+          <h2 class="words" data-l="en">Let's work together</h2>
+          <h2 class="words" data-l="ja">共同研究について</h2>
+          <p class="reveal" style="color:var(--ink-2)" data-l="en">We welcome joint research in the following areas.</p>
+          <p class="reveal" style="color:var(--ink-2)" data-l="ja">以下の分野での共同研究を歓迎しています。</p>
+        </div>
+        <ul class="check-list">
+          <li class="reveal" style="--d:0s"><span data-l="en">Image processing and computer vision</span><span data-l="ja">画像処理・コンピュータビジョン</span></li>
+          <li class="reveal" style="--d:.1s"><span data-l="en">Applying AI to agriculture</span><span data-l="ja">農業分野へのAI応用</span></li>
+          <li class="reveal" style="--d:.2s"><span data-l="en">Data visualization and human interface design</span><span data-l="ja">データ可視化・ヒューマンインタフェース設計</span></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="js/main.js"></script>
+</body>
+</html>

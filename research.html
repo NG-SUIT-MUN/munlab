@@ -4,17 +4,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Research | Mun Lab</title>
-  <meta name="description" content="Research at Mun Lab: super-resolution, agricultural pest detection, visualization systems and machine learning with limited data.">
+  <meta name="description" content="Research topics of Mun Lab, Iwate Prefectural University: deep image processing and super-resolution, smart agriculture, and medical image analysis.">
   <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <script>(function(){var l;try{l=localStorage.getItem("lang")}catch(e){}if(!l)l=(navigator.language||"").slice(0,2)==="ja"?"ja":"en";document.documentElement.setAttribute("data-lang",l);document.documentElement.lang=l})()</script>
 </head>
 <body data-page="research"
       data-title-en="Research | Mun Lab"
-      data-title-ja="研究 | ムン研究室">
+      data-title-ja="研究紹介 | ムン研究室">
 
   <div id="site-header"></div>
 
@@ -23,141 +23,342 @@
       <canvas class="net-canvas" aria-hidden="true"></canvas>
       <div class="container">
         <div class="eyebrow reveal">Research</div>
-        <h1 class="words" data-l="en">Our Research</h1>
-        <h1 class="words" data-l="ja">研究内容</h1>
-        <p class="reveal" style="--d:.3s" data-l="en">AI technologies centered on image processing, machine learning and computer vision, with applications in agriculture.</p>
-        <p class="reveal" style="--d:.3s" data-l="ja">画像処理・機械学習・コンピュータビジョンを中心としたAI技術と、その農業分野への応用に取り組んでいます。</p>
+        <h1 class="words" data-l="en">Research</h1>
+        <h1 class="words" data-l="ja">研究紹介</h1>
+        <p class="reveal" style="--d:.3s" data-l="en">From image processing fundamentals to applications in agriculture and medicine.</p>
+        <p class="reveal" style="--d:.3s" data-l="ja">画像処理の基礎技術から、農業・医療分野への応用まで。</p>
       </div>
     </section>
 
-    <!-- ===== Themes ===== -->
-    <section class="section" style="padding-top:40px">
+    <!-- ===== Overview ===== -->
+    <section class="section">
+      <div class="container split">
+        <div>
+          <div class="eyebrow reveal">Overview</div>
+          <h2 class="words" data-l="en">Research overview</h2>
+          <h2 class="words" data-l="ja">研究の概要</h2>
+        </div>
+        <div>
+          <p class="lead-text reveal" data-l="en">
+            Our research is built on image processing and machine learning. At its core is the question of how to extract
+            reliable information from images that are low in resolution or quality. We develop these fundamental
+            techniques and apply them to real problems in agriculture and medicine, covering everything from algorithms
+            to working systems.
+          </p>
+          <p class="lead-text reveal" data-l="ja">
+            当研究室は、画像処理と機械学習を基盤とした研究に取り組んでいます。解像度や画質が十分でない画像から、いかに信頼できる情報を引き出すかを中心的な課題とし、その基礎技術を農業・医療分野の実課題へ応用しています。アルゴリズムの開発から実際に動くシステムの構築までを一貫して行っています。
+          </p>
+        </div>
+      </div>
+
       <div class="container">
+        <nav class="topic-index" aria-label="Research topics">
+          <a class="reveal" href="#topic1" style="--d:0s">
+            <span class="topic-index-num">01</span>
+            <span data-l="en">Deep Image Processing</span>
+            <span data-l="ja">深層画像処理</span>
+          </a>
+          <a class="reveal" href="#topic2" style="--d:.1s">
+            <span class="topic-index-num">02</span>
+            <span data-l="en">Smart Agriculture</span>
+            <span data-l="ja">スマート農業</span>
+          </a>
+          <a class="reveal" href="#topic3" style="--d:.2s">
+            <span class="topic-index-num">03</span>
+            <span data-l="en">Medical Image Analysis &amp; Systems</span>
+            <span data-l="ja">医療画像解析・医用システム開発</span>
+          </a>
+        </nav>
+      </div>
+    </section>
 
-        <article class="theme" id="sr">
-          <div class="theme-visual reveal">
-            <svg viewBox="0 0 200 150" aria-hidden="true">
-              <g fill="#1b7bc2">
-                <rect x="10" y="35" width="20" height="20" opacity=".25"/><rect x="30" y="35" width="20" height="20" opacity=".6"/><rect x="50" y="35" width="20" height="20" opacity=".35"/>
-                <rect x="10" y="55" width="20" height="20" opacity=".7"/><rect x="30" y="55" width="20" height="20" opacity=".95"/><rect x="50" y="55" width="20" height="20" opacity=".55"/>
-                <rect x="10" y="75" width="20" height="20" opacity=".3"/><rect x="30" y="75" width="20" height="20" opacity=".65"/><rect x="50" y="75" width="20" height="20" opacity=".3"/>
-                <rect x="10" y="95" width="20" height="20" opacity=".15"/><rect x="30" y="95" width="20" height="20" opacity=".3"/><rect x="50" y="95" width="20" height="20" opacity=".2"/>
+    <!-- =========================================================
+         To edit a topic: change the text in its <section class="topic">.
+         To add a research theme: copy one <li> in .subthemes.
+         ========================================================= -->
+
+    <!-- ===== Topic 01 ===== -->
+    <section class="section tint topic" id="topic1">
+      <div class="container topic-grid">
+        <aside class="topic-aside">
+          <div class="topic-label reveal">Topic 01</div>
+          <h2 class="words" data-l="en">Deep Image Processing</h2>
+          <h2 class="words" data-l="ja">深層画像処理</h2>
+          <p class="topic-summary reveal" data-l="en">Using deep learning to recover fine detail from low-resolution images.</p>
+          <p class="topic-summary reveal" data-l="ja">深層学習を用いて、低解像度の画像から精細な情報を復元します。</p>
+          <div class="topic-visual reveal">
+            <svg viewBox="-4 2.5 211 158.25" aria-hidden="true">
+              <defs>
+                <linearGradient id="sky1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c6e3f8"/><stop offset="1" stop-color="#f3f9fe"/></linearGradient>
+                <clipPath id="clipLR"><rect x="14" y="46" width="58" height="58" rx="6"/></clipPath>
+                <clipPath id="clipSR"><rect x="118" y="40" width="70" height="70" rx="8"/></clipPath>
+              </defs>
+              <rect x="12" y="44" width="62" height="62" rx="8" fill="#fff"/>
+              <g clip-path="url(#clipLR)">
+<rect x="14.00" y="46.00" width="9.97" height="9.97" fill="#c9e4f8"/>
+<rect x="23.67" y="46.00" width="9.97" height="9.97" fill="#c9e4f8"/>
+<rect x="33.33" y="46.00" width="9.97" height="9.97" fill="#c9e4f8"/>
+<rect x="43.00" y="46.00" width="9.97" height="9.97" fill="#c9e4f8"/>
+<rect x="52.67" y="46.00" width="9.97" height="9.97" fill="#cbe0f0"/>
+<rect x="62.33" y="46.00" width="9.97" height="9.97" fill="#c9e4f8"/>
+<rect x="14.00" y="55.67" width="9.97" height="9.97" fill="#d1e8f9"/>
+<rect x="23.67" y="55.67" width="9.97" height="9.97" fill="#d1e8f9"/>
+<rect x="33.33" y="55.67" width="9.97" height="9.97" fill="#d1e8f9"/>
+<rect x="43.00" y="55.67" width="9.97" height="9.97" fill="#d4dbe2"/>
+<rect x="52.67" y="55.67" width="9.97" height="9.97" fill="#e89461"/>
+<rect x="62.33" y="55.67" width="9.97" height="9.97" fill="#d2e4f1"/>
+<rect x="14.00" y="65.33" width="9.97" height="9.97" fill="#d8ecfa"/>
+<rect x="23.67" y="65.33" width="9.97" height="9.97" fill="#9cd0f3"/>
+<rect x="33.33" y="65.33" width="9.97" height="9.97" fill="#cce6f9"/>
+<rect x="43.00" y="65.33" width="9.97" height="9.97" fill="#d1e8f9"/>
+<rect x="52.67" y="65.33" width="9.97" height="9.97" fill="#b1cbde"/>
+<rect x="62.33" y="65.33" width="9.97" height="9.97" fill="#d8ecfa"/>
+<rect x="14.00" y="75.00" width="9.97" height="9.97" fill="#b1d9f6"/>
+<rect x="23.67" y="75.00" width="9.97" height="9.97" fill="#5fb3ec"/>
+<rect x="33.33" y="75.00" width="9.97" height="9.97" fill="#6fbaed"/>
+<rect x="43.00" y="75.00" width="9.97" height="9.97" fill="#7abfef"/>
+<rect x="52.67" y="75.00" width="9.97" height="9.97" fill="#5fb3ec"/>
+<rect x="62.33" y="75.00" width="9.97" height="9.97" fill="#9dd0f3"/>
+<rect x="14.00" y="84.67" width="9.97" height="9.97" fill="#5aade6"/>
+<rect x="23.67" y="84.67" width="9.97" height="9.97" fill="#2f8bce"/>
+<rect x="33.33" y="84.67" width="9.97" height="9.97" fill="#1c7cc3"/>
+<rect x="43.00" y="84.67" width="9.97" height="9.97" fill="#3590d2"/>
+<rect x="52.67" y="84.67" width="9.97" height="9.97" fill="#439cdb"/>
+<rect x="62.33" y="84.67" width="9.97" height="9.97" fill="#318dd0"/>
+<rect x="14.00" y="94.33" width="9.97" height="9.97" fill="#1c7cc3"/>
+<rect x="23.67" y="94.33" width="9.97" height="9.97" fill="#1b7bc2"/>
+<rect x="33.33" y="94.33" width="9.97" height="9.97" fill="#1b7bc2"/>
+<rect x="43.00" y="94.33" width="9.97" height="9.97" fill="#1b7bc2"/>
+<rect x="52.67" y="94.33" width="9.97" height="9.97" fill="#1b7bc2"/>
+<rect x="62.33" y="94.33" width="9.97" height="9.97" fill="#1b7bc2"/>
               </g>
-              <path d="M84 75h28M104 67l8 8-8 8" fill="none" stroke="#c8602a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-              <defs><radialGradient id="g1"><stop offset="0" stop-color="#1b7bc2"/><stop offset=".6" stop-color="#5fb3ec"/><stop offset="1" stop-color="#c6e3f8" stop-opacity="0"/></radialGradient></defs>
-              <circle cx="156" cy="75" r="38" fill="url(#g1)"/>
-              <circle cx="156" cy="75" r="40" fill="none" stroke="#1b7bc2" stroke-width="1" stroke-dasharray="3 4" opacity=".5"/>
-            </svg>
-          </div>
-          <div>
-            <div class="theme-num reveal">01</div>
-            <h3 class="words" data-l="en">Super-Resolution for Low-Resolution Images</h3>
-            <h3 class="words" data-l="ja">低解像度画像の超解像技術</h3>
-            <p class="reveal" data-l="en">
-              Super-resolution reconstructs high-resolution detail from low-resolution images. We study reconstruction
-              approaches such as backprojection, dictionary learning and sparse representation, and apply
-              super-resolution to improve recognition of small objects in real-world images.
-            </p>
-            <p class="reveal" data-l="ja">
-              超解像は、低解像度の画像から高解像度の情報を復元する技術です。バックプロジェクションや辞書学習・スパース表現などの再構成手法を研究し、実環境の画像に写る小さな物体の認識精度向上に活用しています。
-            </p>
-          </div>
-        </article>
-
-        <article class="theme" id="pest">
-          <div class="theme-visual reveal">
-            <svg viewBox="0 0 200 150" aria-hidden="true">
-              <path d="M30 120C40 50 110 20 175 28c-8 62-58 105-145 92z" fill="#9dd0f3"/>
-              <path d="M30 120C70 90 120 60 175 28" fill="none" stroke="#5fb3ec" stroke-width="2"/>
-              <g fill="#0a1828"><ellipse cx="85" cy="80" rx="3" ry="6" transform="rotate(30 85 80)"/><ellipse cx="128" cy="55" rx="2.5" ry="5" transform="rotate(-20 128 55)"/><ellipse cx="112" cy="95" rx="2.5" ry="5"/></g>
-              <g fill="none" stroke="#c8602a" stroke-width="1.8"><rect x="74" y="68" width="22" height="24" rx="2"/><rect x="118" y="44" width="20" height="22" rx="2"/><rect x="102" y="84" width="20" height="22" rx="2"/></g>
-              <g font-family="Inter, sans-serif" font-size="7" font-weight="600" fill="#c8602a"><text x="74" y="65">0.94</text><text x="118" y="41">0.91</text></g>
-            </svg>
-          </div>
-          <div>
-            <div class="theme-num reveal">02</div>
-            <h3 class="words" data-l="en">Detection and Classification of Agricultural Pests</h3>
-            <h3 class="words" data-l="ja">画像処理・AIを用いた農業害虫の検出・分類</h3>
-            <p class="reveal" data-l="en">
-              Many agricultural pests, such as thrips, are tiny and hard to recognize in images. We develop methods
-              that combine image processing and AI, including super-resolution, to detect and classify these pests accurately.
-            </p>
-            <p class="reveal" data-l="ja">
-              アザミウマなどの農業害虫は非常に小さく、画像からの識別が困難です。超解像をはじめとする画像処理とAIを組み合わせ、害虫を高精度に検出・分類する手法を開発しています。
-            </p>
-          </div>
-        </article>
-
-        <article class="theme" id="vis">
-          <div class="theme-visual reveal">
-            <svg viewBox="0 0 200 150" aria-hidden="true">
-              <rect x="20" y="22" width="110" height="80" rx="6" fill="#fff" stroke="#5fb3ec" stroke-width="2"/>
-              <g fill="#9dd0f3"><rect x="34" y="70" width="12" height="20"/><rect x="52" y="56" width="12" height="34"/><rect x="70" y="62" width="12" height="28"/><rect x="88" y="44" width="12" height="46"/></g>
-              <path d="M34 52l20-10 18 6 28-14" fill="none" stroke="#1b7bc2" stroke-width="2" stroke-linecap="round"/>
-              <path d="M60 102l-6 18h42l-6-18" fill="#c6e3f8"/>
-              <rect x="138" y="42" width="44" height="80" rx="8" fill="#fff" stroke="#1b7bc2" stroke-width="2"/>
-              <circle cx="160" cy="70" r="13" fill="none" stroke="#9dd0f3" stroke-width="6"/>
-              <path d="M160 57a13 13 0 0 1 12 18" fill="none" stroke="#c8602a" stroke-width="6"/>
-              <g fill="#c6e3f8"><rect x="146" y="92" width="28" height="4" rx="2"/><rect x="146" y="100" width="20" height="4" rx="2"/></g>
-            </svg>
-          </div>
-          <div>
-            <div class="theme-num reveal">03</div>
-            <h3 class="words" data-l="en">Visualization Systems for Pest Monitoring</h3>
-            <h3 class="words" data-l="ja">農業害虫モニタリングのための可視化システム</h3>
-            <p class="reveal" data-l="en">
-              We build web and Android applications that visualize pest monitoring data, making AI results easy to
-              understand and use for people working in the field.
-            </p>
-            <p class="reveal" data-l="ja">
-              Web・Androidアプリを用いて害虫モニタリングのデータを可視化するシステムを構築しています。AIの解析結果を、現場の方々にとって分かりやすく使いやすい形で届けることを目指しています。
-            </p>
-          </div>
-        </article>
-
-        <article class="theme" id="limited">
-          <div class="theme-visual reveal">
-            <svg viewBox="0 0 200 150" aria-hidden="true">
-              <g fill="#1b7bc2"><circle cx="35" cy="50" r="5"/><circle cx="45" cy="95" r="5"/><circle cx="28" cy="75" r="5"/></g>
-              <g stroke="#5fb3ec" stroke-width="1.2" opacity=".8">
-                <path d="M35 50L95 40M35 50L95 75M28 75L95 40M28 75L95 75M28 75L95 110M45 95L95 75M45 95L95 110"/>
-                <path d="M95 40L150 58M95 40L150 92M95 75L150 58M95 75L150 92M95 110L150 58M95 110L150 92"/>
+              <g stroke="#9dd0f3" stroke-width="1">
+                <path d="M84 66L95 60M84 66L95 75M84 66L95 90M84 84L95 60M84 84L95 75M84 84L95 90M95 60L106 66M95 75L106 66M95 90L106 66M95 60L106 84M95 75L106 84M95 90L106 84"/>
               </g>
-              <g fill="#fff" stroke="#1b7bc2" stroke-width="2"><circle cx="95" cy="40" r="7"/><circle cx="95" cy="75" r="7"/><circle cx="95" cy="110" r="7"/></g>
-              <g fill="#5fb3ec"><circle cx="150" cy="58" r="8"/><circle cx="150" cy="92" r="8"/></g>
-              <path d="M178 66l3 7 7 3-7 3-3 7-3-7-7-3 7-3z" fill="#c8602a"/>
+              <g fill="#fff" stroke="#1b7bc2" stroke-width="1.6">
+                <circle cx="84" cy="66" r="3.2"/><circle cx="84" cy="84" r="3.2"/>
+                <circle cx="95" cy="60" r="3.2"/><circle cx="95" cy="75" r="3.2"/><circle cx="95" cy="90" r="3.2"/>
+                <circle cx="106" cy="66" r="3.2"/><circle cx="106" cy="84" r="3.2"/>
+              </g>
+              <rect x="115" y="37" width="76" height="76" rx="10" fill="#fff"/>
+              <g clip-path="url(#clipSR)">
+<rect x="118" y="40" width="70" height="70" fill="url(#sky1)"/>
+<circle cx="169.8" cy="58.2" r="7.7" fill="#e8935f"/>
+<polygon points="118.0,90.4 137.6,65.2 153.0,82.0 168.4,68.0 188.0,86.2 188.0,110.0 118.0,110.0" fill="#5fb3ec"/>
+<polygon points="118.0,100.2 144.6,84.8 167.0,94.6 188.0,89.0 188.0,110.0 118.0,110.0" fill="#1b7bc2"/>
+              </g>
+              <g font-family="Plus Jakarta Sans, sans-serif" font-size="8" font-weight="700" fill="#4a5d72" text-anchor="middle">
+                <text x="43" y="126">LR</text><text x="153" y="126">SR</text>
+              </g>
             </svg>
           </div>
-          <div>
-            <div class="theme-num reveal">04</div>
-            <h3 class="words" data-l="en">Machine Learning with Limited Data</h3>
-            <h3 class="words" data-l="ja">限られたデータでの機械学習手法</h3>
-            <p class="reveal" data-l="en">
-              Collecting large labelled datasets is often difficult in real applications such as agriculture.
-              We study machine learning methods that can learn effectively from a limited amount of data.
-            </p>
-            <p class="reveal" data-l="ja">
-              農業をはじめとする実応用の場面では、大量のラベル付きデータを集めることが難しい場合が多くあります。限られたデータからでも効果的に学習できる機械学習手法を研究しています。
-            </p>
+        </aside>
+
+        <div class="topic-body">
+          <p class="reveal" data-l="en">
+            Images captured in the real world are often low in resolution, which limits both human interpretation and
+            automatic recognition. We study super-resolution, which uses machine learning and deep learning to
+            reconstruct high-resolution detail from low-resolution images.
+          </p>
+          <p class="reveal" data-l="ja">
+            実環境で撮影された画像は解像度が十分でないことが多く、人による判読やAIによる認識の妨げとなります。機械学習・深層学習を用いて、低解像度画像から高解像度の詳細を復元する超解像技術の研究を行っています。
+          </p>
+
+          <h3 class="topic-h reveal"><span data-l="en">Research themes</span><span data-l="ja">研究テーマ</span></h3>
+          <ul class="subthemes">
+            <li class="reveal">
+              <h4 data-l="en">Super-Resolution</h4><h4 data-l="ja">超解像</h4>
+              <p data-l="en">Reconstructing high-resolution images from low-resolution inputs with machine learning and deep learning, and using super-resolution to improve the recognition of small objects.</p>
+              <p data-l="ja">機械学習・深層学習を用いて低解像度画像から高解像度画像を再構成し、小さな物体の認識精度の向上に活用します。</p>
+            </li>
+          </ul>
+
+          <h3 class="topic-h reveal"><span data-l="en">Related publications</span><span data-l="ja">関連業績</span></h3>
+          <ul class="pub-list">
+            <li class="reveal"><b>S. M. Ng</b> et al., “<span class="pub-title">Hybrid Image Reconstruction Algorithm for Low-Resolution Images</span>,” <i>International Conference on Biomedical Engineering (IcoBE 2023)</i>, 2023. <span data-l="en">(Oral presentation)</span><span data-l="ja">（口頭発表）</span></li>
+            <li class="reveal"><b>S. M. Ng</b>, H. Yazid, N. Mustafa, “<span class="pub-title">Performance analysis on dictionary learning and sparse representation algorithms</span>,” <i>Multimedia Tools and Applications</i>, 2022. <a class="pub-doi" href="https://doi.org/10.1007/s11042-022-12375-4" target="_blank" rel="noopener">doi:10.1007/s11042-022-12375-4</a></li>
+            <li class="reveal"><b>S. M. Ng</b>, H. Yazid, N. Mustafa, “<span class="pub-title">Analysis on Single-Image Super-Resolution (SISR) Using Dictionary Learning and Sparse Representation Algorithm</span>,” <i>RoViSP 2021</i>, 2022. <a class="pub-doi" href="https://doi.org/10.1007/978-981-16-8129-5_29" target="_blank" rel="noopener">doi:10.1007/978-981-16-8129-5_29</a></li>
+            <li class="reveal"><b>S. M. Ng</b>, H. Yazid, S. A. Rahim, N. Mustafa, “<span class="pub-title">Performance Analysis of Adaptive Unsharp Masking Filter Techniques for Image Contrast Enhancement</span>,” <i>IEEE ICSET</i>, 2021. <a class="pub-doi" href="https://doi.org/10.1109/ICSET53708.2021.9612557" target="_blank" rel="noopener">doi:10.1109/ICSET53708.2021.9612557</a></li>
+            <li class="reveal"><b>S. M. Ng</b>, H. Yazid, N. Mustafa, M. Y. Mashor, “<span class="pub-title">Parameter Analysis on Backprojection for Super-Resolution (SR) Reconstruction Algorithm</span>,” <i>Journal of Physics: Conference Series</i>, 2021. <a class="pub-doi" href="https://doi.org/10.1088/1742-6596/2071/1/012035" target="_blank" rel="noopener">doi:10.1088/1742-6596/2071/1/012035</a></li>
+            <li class="reveal"><b>S. M. Ng</b>, H. Yazid, “<span class="pub-title">Analysis on Weighted Average Between Features in Dictionary Learning and Sparse Representation Algorithms for Low-Resolution Images</span>,” <i>SympoSIMM 2020</i>, 2021.</li>
+            <li class="reveal"><b>S. M. Ng</b>, H. Yazid, “<span class="pub-title">Analysis of feature representation in dictionary learning and sparse coding algorithms for low resolution image</span>,” <i>IOP Conference Series: Materials Science and Engineering</i>, 2020. <a class="pub-doi" href="https://doi.org/10.1088/1757-899X/864/1/012139" target="_blank" rel="noopener">doi:10.1088/1757-899X/864/1/012139</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Topic 02 ===== -->
+    <section class="section topic" id="topic2">
+      <div class="container topic-grid">
+        <aside class="topic-aside">
+          <div class="topic-label reveal">Topic 02</div>
+          <h2 class="words" data-l="en">Smart Agriculture</h2>
+          <h2 class="words" data-l="ja">スマート農業</h2>
+          <p class="topic-summary reveal" data-l="en">AI that detects, identifies and monitors small insect pests such as thrips to support decisions in the field.</p>
+          <p class="topic-summary reveal" data-l="ja">アザミウマなどの微小害虫を検出・識別し、その発生状況をモニタリングするAI技術で、現場の意思決定を支援します。</p>
+          <div class="topic-visual reveal">
+            <svg viewBox="-3.5 -2.6 207 155.25" aria-hidden="true">
+              <defs>
+                <clipPath id="clipCam"><rect x="14" y="30" width="96" height="90" rx="7"/></clipPath>
+                <g id="thrips">
+                  <ellipse cx="0" cy="0" rx="1.7" ry="5.2" fill="#0a1828"/>
+                  <path d="M0-2.5l-4.5 4M0-2.5l4.5 4M0-1l-3.5 5M0-1l3.5 5" stroke="#4a5d72" stroke-width=".6" fill="none"/>
+                  <path d="M-.6-5.2l-1.4-2.3M.6-5.2l1.4-2.3" stroke="#0a1828" stroke-width=".6"/>
+                </g>
+              </defs>
+              <rect x="12" y="28" width="100" height="94" rx="9" fill="#fff"/>
+              <g clip-path="url(#clipCam)">
+                <rect x="14" y="30" width="96" height="90" fill="#e4f2fc"/>
+                <path d="M8 128C18 70 62 40 116 36c-6 54-46 92-108 92z" fill="#9dd0f3"/>
+                <path d="M8 128C46 96 82 66 116 36" fill="none" stroke="#5fb3ec" stroke-width="2"/>
+                <path d="M40 104l-8-14M60 86l-10-16M78 70l-6-18M50 96l14-2M70 78l16-2M88 62l12-2" stroke="#5fb3ec" stroke-width="1.2" fill="none" opacity=".7"/>
+              </g>
+              <use href="#thrips" transform="translate(45 78) rotate(28)"/>
+              <use href="#thrips" transform="translate(84 52) rotate(-24)"/>
+              <use href="#thrips" transform="translate(70 100) rotate(8)"/>
+              <g fill="none" stroke="#e8935f" stroke-width="1.6">
+                <rect x="36" y="68" width="18" height="20" rx="2"/>
+                <rect x="75" y="42" width="18" height="20" rx="2"/>
+                <rect x="61" y="90" width="18" height="20" rx="2"/>
+              </g>
+              <g font-family="Plus Jakarta Sans, sans-serif" font-size="6" font-weight="700" fill="#c8602a">
+                <text x="36" y="65">thrips 0.94</text>
+                <text x="75" y="39">thrips 0.91</text>
+                <text x="61" y="87">thrips 0.88</text>
+              </g>
+              <path d="M116 75h12" stroke="#5fb3ec" stroke-width="2" stroke-dasharray="2 3" stroke-linecap="round"/>
+              <rect x="132" y="22" width="56" height="106" rx="10" fill="#fff" stroke="#1b7bc2" stroke-width="2"/>
+              <rect x="152" y="27" width="16" height="3" rx="1.5" fill="#c6e3f8"/>
+              <rect x="139" y="38" width="30" height="4" rx="2" fill="#1b7bc2"/>
+              <rect x="139" y="46" width="20" height="3" rx="1.5" fill="#c6e3f8"/>
+              <g fill="#9dd0f3">
+                <rect x="140" y="86" width="6" height="12" rx="1"/><rect x="149" y="80" width="6" height="18" rx="1"/>
+                <rect x="158" y="72" width="6" height="26" rx="1"/><rect x="167" y="64" width="6" height="34" rx="1" fill="#5fb3ec"/>
+                <rect x="176" y="76" width="6" height="22" rx="1"/>
+              </g>
+              <path d="M143 80l9-6 9-8 9-8 9 10" fill="none" stroke="#e8935f" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              <rect x="139" y="98" width="44" height="1" fill="#c6e3f8"/>
+              <rect x="139" y="106" width="44" height="12" rx="4" fill="#e4f2fc"/>
+              <circle cx="146" cy="112" r="3" fill="#e8935f"/>
+              <rect x="152" y="110.5" width="24" height="3" rx="1.5" fill="#9dd0f3"/>
+            </svg>
           </div>
-        </article>
+        </aside>
+
+        <div class="topic-body">
+          <p class="reveal" data-l="en">
+            Detecting insect pests early helps reduce crop damage and unnecessary pesticide use. However, many pests,
+            such as thrips, are only a few millimetres long and are difficult to identify in images. We develop AI methods to
+            detect and classify these small insects, and systems to monitor them in the field.
+          </p>
+          <p class="reveal" data-l="ja">
+            害虫の早期発見は、作物被害や不要な農薬使用の削減につながります。しかし、アザミウマなどの害虫は体長数ミリと小さく、画像からの識別は容易ではありません。これらの微小害虫を検出・分類するAI手法と、現場でモニタリングするためのシステムを開発しています。
+          </p>
+
+          <h3 class="topic-h reveal"><span data-l="en">Research themes</span><span data-l="ja">研究テーマ</span></h3>
+          <ul class="subthemes">
+            <li class="reveal">
+              <h4 data-l="en">Small Insect Detection &amp; Classification</h4><h4 data-l="ja">微小害虫の検出・分類</h4>
+              <p data-l="en">Locating small insects such as thrips in images captured in agricultural settings and identifying their species, including those that look very similar.</p>
+              <p data-l="ja">農業現場で撮影された画像から、アザミウマなどの微小害虫を検出し、外見がよく似た種も含めてその種類を識別します。</p>
+            </li>
+            <li class="reveal">
+              <h4 data-l="en">Monitoring System Development</h4><h4 data-l="ja">モニタリングシステムの開発</h4>
+              <p data-l="en">Web and Android applications that visualize pest occurrence so that farmers and researchers can act on it.</p>
+              <p data-l="ja">害虫の発生状況を可視化するWeb・Androidアプリを開発し、生産者や研究者の対策に役立てます。</p>
+            </li>
+          </ul>
+
+
+          <h3 class="topic-h reveal"><span data-l="en">Related publications &amp; activities</span><span data-l="ja">関連業績・活動</span></h3>
+          <ul class="pub-list">
+            <li class="reveal"><b>S. M. Ng</b>, P. Buayai, L. M. Kamarudin, H. Yazid, X. Mao, “<span class="pub-title">Application of Super-Resolution (SR) for Thrips Detection and Classification</span>,” <i>International Conference on Cyberworlds (CW)</i>, 2024. <a class="pub-doi" href="https://doi.org/10.1109/CW64301.2024.00039" target="_blank" rel="noopener">doi:10.1109/CW64301.2024.00039</a></li>
+            <li class="reveal"><span data-l="en">Exhibitor, Agribusiness Creation Fair 2024</span><span data-l="ja">アグリビジネス創出フェア2024 出展</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Topic 03 ===== -->
+    <section class="section tint topic" id="topic3">
+      <div class="container topic-grid">
+        <aside class="topic-aside">
+          <div class="topic-label reveal">Topic 03</div>
+          <h2 class="words" data-l="en">Medical Image Analysis &amp; Systems</h2>
+          <h2 class="words" data-l="ja">医療画像解析・医用システム開発</h2>
+          <p class="topic-summary reveal" data-l="en">Applying image processing and AI to medical images and healthcare systems.</p>
+          <p class="topic-summary reveal" data-l="ja">画像処理とAIを、医用画像の解析と医療システムに応用します。</p>
+          <div class="topic-visual reveal">
+            <svg viewBox="5.5 -4 196 147" aria-hidden="true">
+              <rect x="20" y="20" width="160" height="108" rx="10" fill="#fff" stroke="#9dd0f3" stroke-width="2"/>
+              <rect x="30" y="30" width="88" height="88" rx="6" fill="#0a1828"/>
+              <g fill="none" stroke="#7d8ea1" stroke-width="1.2" opacity=".45">
+                <path d="M74 50c-12 0-22 4-28 10M74 62c-13 0-24 4-30 11M74 74c-13 0-24 4-30 11"/>
+                <path d="M74 50c12 0 22 4 28 10M74 62c13 0 24 4 30 11M74 74c13 0 24 4 30 11"/>
+              </g>
+              <path d="M70 42C58 42 43 60 41 84c-1 13 5 22 16 20 8-2 13-7 13-16z" fill="#5fb3ec" opacity=".55"/>
+              <path d="M78 42c12 0 27 18 29 42 1 13-5 22-16 20-8-2-13-7-13-16z" fill="#5fb3ec" opacity=".55"/>
+              <rect x="72" y="36" width="4" height="76" rx="2" fill="#9dd0f3" opacity=".7"/>
+              <circle cx="95" cy="70" r="4" fill="#c6e3f8"/>
+              <rect x="85" y="60" width="20" height="20" rx="2" fill="none" stroke="#e8935f" stroke-width="1.8"/>
+              <text x="85" y="56" font-family="Plus Jakarta Sans, sans-serif" font-size="7" font-weight="700" fill="#e8935f">0.92</text>
+              <circle cx="148" cy="52" r="11" fill="none" stroke="#e4f2fc" stroke-width="5"/>
+              <path d="M148 41a11 11 0 1 1-10.5 14.3" fill="none" stroke="#1b7bc2" stroke-width="5" stroke-linecap="round"/>
+              <rect x="128" y="76" width="40" height="5" rx="2.5" fill="#e4f2fc"/><rect x="128" y="76" width="26" height="5" rx="2.5" fill="#5fb3ec"/>
+              <rect x="128" y="88" width="40" height="5" rx="2.5" fill="#e4f2fc"/><rect x="128" y="88" width="14" height="5" rx="2.5" fill="#9dd0f3"/>
+              <rect x="128" y="100" width="40" height="5" rx="2.5" fill="#e4f2fc"/><rect x="128" y="100" width="32" height="5" rx="2.5" fill="#1b7bc2"/>
+              <circle cx="176" cy="22" r="11" fill="#1b7bc2"/>
+              <path d="M176 16v12M170 22h12" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </aside>
+
+        <div class="topic-body">
+          <p class="reveal" data-l="en">
+            Building on a background in biomedical engineering, we apply image processing and machine learning to medical
+            images to support analysis and diagnosis, and develop systems that make these technologies practical in
+            healthcare settings.
+          </p>
+          <p class="reveal" data-l="ja">
+            バイオメディカル工学の知見を基盤に、画像処理・機械学習を医用画像に応用して解析や診断の支援につなげるとともに、これらの技術を医療現場で活用するためのシステム開発に取り組んでいます。
+          </p>
+
+          <h3 class="topic-h reveal"><span data-l="en">Research themes</span><span data-l="ja">研究テーマ</span></h3>
+          <ul class="subthemes">
+            <li class="reveal">
+              <h4 data-l="en">Medical Image Analysis</h4><h4 data-l="ja">医療画像解析</h4>
+              <p data-l="en">Enhancement, reconstruction and analysis of medical images using image processing and AI.</p>
+              <p data-l="ja">画像処理・AIを用いた医用画像の強調・再構成・解析。</p>
+            </li>
+            <li class="reveal">
+              <h4 data-l="en">Medical System Development</h4><h4 data-l="ja">医用システム開発</h4>
+              <p data-l="en">Software and systems that bring image analysis into clinical and healthcare use.</p>
+              <p data-l="ja">画像解析技術を医療・ヘルスケアの現場で活用するためのソフトウェア・システムの開発。</p>
+            </li>
+          </ul>
+
+        </div>
       </div>
     </section>
 
     <!-- ===== Collaboration ===== -->
-    <section class="section tint">
+    <section class="section">
       <div class="container split">
         <div>
           <div class="eyebrow reveal">Collaboration</div>
-          <h2 class="words" data-l="en">Let's work together</h2>
+          <h2 class="words" data-l="en">Joint research</h2>
           <h2 class="words" data-l="ja">共同研究について</h2>
-          <p class="reveal" style="color:var(--ink-2)" data-l="en">We welcome joint research in the following areas.</p>
-          <p class="reveal" style="color:var(--ink-2)" data-l="ja">以下の分野での共同研究を歓迎しています。</p>
+          <p class="reveal" style="color:var(--ink-2)" data-l="en">We welcome collaboration with companies, research institutions and local organizations in the following areas.</p>
+          <p class="reveal" style="color:var(--ink-2)" data-l="ja">以下の分野について、企業・研究機関・地域の皆さまとの共同研究を歓迎しています。</p>
+          <a class="btn btn-primary reveal" href="index.html#contact" style="margin-top:12px">
+            <span data-l="en">Contact us</span><span data-l="ja">お問い合わせ</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
         </div>
         <ul class="check-list">
-          <li class="reveal" style="--d:0s"><span data-l="en">Image processing and computer vision</span><span data-l="ja">画像処理・コンピュータビジョン</span></li>
-          <li class="reveal" style="--d:.1s"><span data-l="en">Applying AI to agriculture</span><span data-l="ja">農業分野へのAI応用</span></li>
-          <li class="reveal" style="--d:.2s"><span data-l="en">Data visualization and human interface design</span><span data-l="ja">データ可視化・ヒューマンインタフェース設計</span></li>
+          <li class="reveal" style="--d:0s"><span data-l="en">Deep image processing and super-resolution</span><span data-l="ja">深層画像処理・超解像</span></li>
+          <li class="reveal" style="--d:.1s"><span data-l="en">AI for agriculture and pest monitoring</span><span data-l="ja">農業・害虫モニタリングへのAI応用</span></li>
+          <li class="reveal" style="--d:.2s"><span data-l="en">Medical image analysis and medical system development</span><span data-l="ja">医療画像解析・医用システム開発</span></li>
         </ul>
       </div>
     </section>

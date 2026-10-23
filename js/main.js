@@ -16,6 +16,7 @@
   var NAV = [
     { id: "home",         href: "index.html",        en: "Home",         ja: "ホーム" },
     { id: "research",     href: "research.html",     en: "Research",     ja: "研究" },
+    { id: "education",    href: "education.html",    en: "Education",    ja: "教育" },
     { id: "publications", href: "publications.html", en: "Publications", ja: "業績" },
     { id: "members",      href: "members.html",      en: "Members",      ja: "メンバー" }
   ];

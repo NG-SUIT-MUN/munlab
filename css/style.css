@@ -738,7 +738,7 @@ html[data-lang="ja"] .site-footer h4 { letter-spacing: .04em; font-size: .9rem; 
 .site-footer ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
 .site-footer a { color: #b9c8d8; }
 .site-footer a:hover { color: var(--sky-300); }
-.site-footer .f-addr { margin: 0 0 12px; }
+.f-postal { font-style: normal; margin-bottom: 14px; }
 .f-rooms { margin: 0; display: grid; grid-template-columns: max-content 1fr; gap: 6px 16px; }
 .f-rooms dt { color: #7d90a4; }
 .f-rooms dd { margin: 0; }

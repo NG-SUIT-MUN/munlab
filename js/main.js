@@ -60,26 +60,27 @@
       '<footer class="site-footer"><div class="container">' +
         '<div class="footer-grid">' +
           "<div>" + brand +
-            "<p>" + bi("Faculty of Software and Information Science,<br>Iwate Prefectural University",
-                       "岩手県立大学<br>ソフトウェア情報学部") + "</p>" +
+            "<p>" + bi("Faculty of Software and Information Science", "ソフトウェア情報学部") + "</p>" +
           "</div>" +
-          "<div><h4>" + bi("Contact", "お問い合わせ") + "</h4><ul>" +
-            '<li><a href="mailto:' + LINKS.email + '">' + LINKS.email + "</a></li>" +
-            '<li><a href="' + LINKS.ipu + '" target="_blank" rel="noopener">' + bi("IPU Lab Page", "大学の研究室紹介") + "</a></li>" +
-          "</ul></div>" +
-          "<div><h4>" + bi("Location", "所在地") + "</h4>" +
-            '<p class="f-addr">' + bi("Faculty of Software and Information Science<br>Block A, 4th Floor", "ソフトウェア情報学部<br>A棟 4階") + "</p>" +
+          "<div><h4>" + bi("Address", "所在地") + "</h4>" +
+            '<address class="f-postal">' +
+              bi("Block A, 4th Floor<br>152-52 Sugo, Takizawa, Iwate 020-0693, Japan", "〒020-0693<br>岩手県滝沢市巣子152-52 A棟4階") +
+            "</address>" +
             '<dl class="f-rooms">' +
               "<dt>" + bi("Faculty Office", "教員研究室") + "</dt><dd>" + bi("Room A-4-21", "A-4-21") + "</dd>" +
               "<dt>" + bi("Student Lab", "学生研究室") + "</dt><dd>" + bi("Room A20 (Mun Lab)", "A20（ムン研）") + "</dd>" +
             "</dl>" +
           "</div>" +
+          "<div><h4>" + bi("Contact", "お問い合わせ") + "</h4><ul>" +
+            '<li><a href="mailto:' + LINKS.email + '">' + LINKS.email + "</a></li>" +
+            '<li><a href="' + LINKS.ipu + '" target="_blank" rel="noopener">' + bi("IPU Lab Page", "大学の研究室紹介") + "</a></li>" +
+          "</ul></div>" +
         "</div>" +
         '<div class="footer-bottom">' +
           '<nav class="footer-nav" aria-label="Footer">' +
             NAV.map(function (n) { return '<a href="' + n.href + '">' + bi(n.en, n.ja) + "</a>"; }).join("") +
           "</nav>" +
-          '<div class="copyright">© ' + new Date().getFullYear() + " Mun Lab, Iwate Prefectural University</div>" +
+          '<div class="copyright">© ' + new Date().getFullYear() + " Mun Lab</div>" +
         "</div>" +
       "</div></footer>";
   }

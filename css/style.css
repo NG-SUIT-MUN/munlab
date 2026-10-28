@@ -48,6 +48,8 @@ body {
 }
 
 img { max-width: 100%; display: block; }
+[data-l="ja"] { font-family: "Noto Sans JP", var(--font-sans); }
+[data-l="ja"] .latin { font-family: var(--font-sans); }  /* English names inside Japanese text */
 a { color: var(--sky-600); text-decoration: none; transition: color .2s; }
 a:hover { color: var(--sky-700); }
 
@@ -480,6 +482,11 @@ html[data-lang="ja"] body { line-height: 1.9; }
 }
 .contact-band h2 { color: var(--white); font-size: clamp(1.6rem, 3.4vw, 2.3rem); margin-bottom: .3em; }
 .contact-band p { margin: 0; opacity: .9; }
+.lab-location { margin-top: 20px; font-size: .95rem; }
+.contact-band .lab-addr { font-weight: 600; opacity: 1; margin-bottom: 6px; }
+.lab-rooms { margin: 0; display: grid; grid-template-columns: max-content 1fr; gap: 4px 18px; }
+.lab-rooms dt { opacity: .8; }
+.lab-rooms dd { margin: 0; }
 .contact-band .btn { background: var(--white); color: var(--sky-700); position: relative; z-index: 1; }
 .contact-band .btn:hover { transform: translateY(-2px); box-shadow: 0 14px 30px -10px rgba(0,0,0,.3); }
 
@@ -568,6 +575,14 @@ html[data-lang="ja"] body { line-height: 1.9; }
   border-radius: 14px;
 }
 .subthemes li:only-child { grid-column: 1 / -1; }
+.sub-link {
+  display: inline-flex; align-items: center; gap: 6px;
+  margin-top: 12px; padding: 6px 12px;
+  border: 1px solid var(--sky-200); border-radius: 8px;
+  font-size: .85rem; font-weight: 600;
+}
+.sub-link:hover { background: var(--sky-50); }
+.sub-link svg { width: 14px; height: 14px; }
 .subthemes h4 { font-size: 1rem; margin: 0 0 4px; }
 .subthemes p { margin: 0; color: var(--ink-2); font-size: .92rem; line-height: 1.65; }
 
@@ -719,10 +734,21 @@ img.avatar { object-fit: cover; height: auto; }
 .site-footer .brand { color: var(--white); margin-bottom: 16px; }
 .site-footer .brand-sub { color: #8ea3b8; }
 .site-footer h4 { color: var(--white); font-size: .85rem; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 16px; }
+html[data-lang="ja"] .site-footer h4 { letter-spacing: .04em; font-size: .9rem; }
 .site-footer ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
 .site-footer a { color: #b9c8d8; }
 .site-footer a:hover { color: var(--sky-300); }
-.footer-bottom { padding-top: 24px; font-size: .8rem; color: #7d90a4; }
+.site-footer .f-addr { margin: 0 0 12px; }
+.f-rooms { margin: 0; display: grid; grid-template-columns: max-content 1fr; gap: 6px 16px; }
+.f-rooms dt { color: #7d90a4; }
+.f-rooms dd { margin: 0; }
+.footer-bottom {
+  display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;
+  gap: 16px 32px;
+  padding-top: 24px;
+}
+.footer-nav { display: flex; flex-wrap: wrap; gap: 8px 28px; }
+.copyright { font-size: .8rem; color: #7d90a4; }
 
 /* ---------- Scroll reveal (float up) ---------- */
 .reveal {

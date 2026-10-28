@@ -64,11 +64,13 @@
           "</div>" +
           "<div><h4>" + bi("Address", "所在地") + "</h4>" +
             '<address class="f-postal">' +
-              bi("Block A, 4th Floor<br>152-52 Sugo, Takizawa, Iwate 020-0693, Japan", "〒020-0693<br>岩手県滝沢市巣子152-52 A棟4階") +
+              bi("152-52 Sugo, Takizawa,<br>Iwate 020-0693, Japan", "〒020-0693<br>岩手県滝沢市巣子152-52") +
             "</address>" +
             '<dl class="f-rooms">' +
-              "<dt>" + bi("Faculty Office", "教員研究室") + "</dt><dd>" + bi("Room A-4-21", "A-4-21") + "</dd>" +
-              "<dt>" + bi("Student Lab", "学生研究室") + "</dt><dd>" + bi("Room A20 (Mun Lab)", "A20（ムン研）") + "</dd>" +
+              "<dt>" + bi("Faculty Office", "教員研究室") + "</dt>" +
+              "<dd>" + bi("Block A, 4th Floor, Room 21 (A-4-21)", "A棟4階21号室（A-4-21）") + "</dd>" +
+              "<dt>" + bi("Student Lab", "学生研究室") + "</dt>" +
+              "<dd>" + bi("Room A20 (Mun Lab)", "A20（ムン研）") + "</dd>" +
             "</dl>" +
           "</div>" +
           "<div><h4>" + bi("Contact", "お問い合わせ") + "</h4><ul>" +
